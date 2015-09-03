@@ -7,7 +7,7 @@ int main()
 {
 
     /* Work in progress version fromn 9/1 lecture. doesn't do much yet */
-    
+
     int sourcefile = open("string.c", O_RDONLY);
     if (sourcefile == -1) {
 	perror("open source file failed");
@@ -21,11 +21,22 @@ int main()
 	return 2;
     }
 
-    
+    /* first version will only copy first 100 bytes of source */
+    ssize_t rret = 0;
+    ssize_t wret = 0;
+    char buf[100];
 
+    rret = read(sourcefile, buf, 100);
+    if (rret == -1) {
+	perror("read error");
+	return 3;
+    }
 
-
-
+    wret = write(destfile, buf, rret);
+    if (wret == -1) {
+	perror("write error");
+	return 4;
+    }
 
     /* explicit close isn't useful if you dont check its return... */
     close(sourcefile);

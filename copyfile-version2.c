@@ -15,7 +15,7 @@ int main()
     }
 
     /* what happens if we omit O_CREAT? what about modes? */
-    int destfile = open("copyofstring.c", O_WRONLY | O_CREAT | O_TRUNC);
+    int destfile = open("copyofstring.c", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
     if (destfile == -1) {
 	perror("open dest file failed");
 	return 2;

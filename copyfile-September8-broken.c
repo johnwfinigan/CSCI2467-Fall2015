@@ -31,6 +31,8 @@ int main(int argc, char **argv)
     char buf[1024];
     int iterations = 0;
 
+    /* broken! change 1024 below to 1025 or 8192
+     * to create a buffer overflow in read */
     while ((rret = read(sourcefile, buf, 1024))) {
 	if (rret == -1) {
 	    perror("read error");
@@ -39,7 +41,10 @@ int main(int argc, char **argv)
 
 	/* keep in mind that write is not required
 	 * to write the full amount - BUG */
-	wret = write(destfile, buf, rret);
+
+	/* broken! we write the whole buffer every time 
+	 * change 1024 to rret to fix */
+	wret = write(destfile, buf, 1024);
 	if (wret == -1) {
 	    perror("write error");
 	    exit(4);

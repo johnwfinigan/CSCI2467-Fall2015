@@ -6,8 +6,6 @@
 int main()
 {
 
-    /* Work in progress version fromn 9/1 lecture. doesn't do much yet */
-
     int sourcefile = open("string.c", O_RDONLY);
     if (sourcefile == -1) {
 	perror("open source file failed");

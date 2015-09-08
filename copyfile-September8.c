@@ -4,19 +4,22 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-int main()
+int main(int argc, char ** argv)
 {
 
-    /* Work in progress version fromn 9/1 lecture. doesn't do much yet */
+    if (argc != 3) {
+        printf("wrong number of arguments\n");
+        exit(5);
+    }
 
-    int sourcefile = open("string.c", O_RDONLY);
+    int sourcefile = open(argv[1], O_RDONLY);
     if (sourcefile == -1) {
 	perror("open source file failed");
 	exit(1);
     }
 
     /* what happens if we omit O_CREAT? what about modes? */
-    int destfile = open("copyofstring.c", O_WRONLY | O_CREAT | O_TRUNC,
+    int destfile = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR);
     if (destfile == -1) {
 	perror("open dest file failed");
@@ -27,6 +30,7 @@ int main()
     ssize_t rret = 0;
     ssize_t wret = 0;
     char buf[1024];
+    int iterations = 0;
 
     while ((rret = read(sourcefile, buf, 1024))) {
 	if (rret == -1) {
@@ -41,6 +45,9 @@ int main()
 	    perror("write error");
 	    exit(4);
 	}
+
+        printf("loop iteration %d\n", iterations);
+        iterations++;
     }
     /* explicit close isn't useful if you dont check its return... */
     close(sourcefile);

@@ -1,6 +1,12 @@
-Log into Cook, clone this repo, and cd into it:
+Get a terminal. If you're on Windows, open Cygwin or your preferred ssh terminal app.
+
+Log into Cook using ssh, clone this repo, and cd into it:
+
 (Dont type the $, the $ stands for your shell's prompt.)
-(if you already have a copy of the repo, you can "git pull" and use it instead.)
+
+$ ssh myUNOusername@cook.cs.uno.edu
+
+(if you already have a copy of the repo, you can "git pull" and use it instead. Otherwise:)
 
 $ git clone https://github.com/johnwfinigan/CSCI2467-Fall2015.git Lab-Sept10
 
@@ -16,6 +22,7 @@ $ gdb ./copyfile
 
 Set the program's arguments inside gdb. This will be eqivalent to calling it like
 "./copyfile test-sourcefile copyof-test-sourcefile" on the shell. 
+
 (don't type (gdb), (gdb) represents gdb's prompt)
 
 (gdb) set args test-sourcefile copyof-test-sourcefile

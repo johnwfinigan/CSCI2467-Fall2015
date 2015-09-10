@@ -49,8 +49,18 @@ int main(int argc, char **argv)
 	iterations++;
     }
     /* explicit close isn't useful if you dont check its return... */
-    close(sourcefile);
-    close(destfile);
+    int scret = close(sourcefile);
+    if (scret == -1) {
+	perror("closing source");
+	exit(6);
+    }
+    int dcret = close(destfile);
+    if (dcret == -1) {
+	perror("closing copy");
+	exit(7);
+    }
+
+
 
     exit(0);
     /* zero return implies success. check it with "echo $?" */

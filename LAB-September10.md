@@ -3,6 +3,7 @@ Log into Cook, clone this repo, and cd into it:
 (if you already have a copy of the repo, you can "git pull" and use it instead.)
 
 $ git clone https://github.com/johnwfinigan/CSCI2467-Fall2015.git Lab-Sept10
+
 $ cd Lab-Sept10
 
 Compile the program.

@@ -11,6 +11,8 @@ not return -1 or a partial read or write, but rather read or write the full
 amount requested. However, please see below: you must explain several scenarios 
 where this is not the case.
 
+Don't forget about "man 2 read" and "man 2 write".
+
 Example:
 
 Q - Assume sourcefile is 1024 bytes in size (Remember, assume defaults as above).
@@ -38,7 +40,7 @@ Noting default assumptions as needed:
 2. Assume sourcefile is 1024 bytes in size, and upon the first iteration of
 the do-while, write() returns 400.
 3. Assume sourcefile is 1024 bytes, and upon the first iteration of the while
-starting at line 32, read returns 400.
+starting at line 32, read() returns 400.
 4. Assume sourcefile is 1040 bytes and a read error occurs in the first iteration.
 
 # Please do not commit solutions to a public repo!

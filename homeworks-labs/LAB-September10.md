@@ -10,11 +10,11 @@ $ ssh myUNOusername@cook.cs.uno.edu
 
 $ git clone https://github.com/johnwfinigan/CSCI2467-Fall2015.git Lab-Sept10
 
-$ cd Lab-Sept10
+$ cd Lab-Sept10/homeworks-labs
 
 Compile the program.
 
-$ gcc -Wall -g -o copyfile copyfile-September8.c
+$ gcc -Wall -g -o copyfile ../copyfile-examples/copyfile-September8.c
 
 Now, start it in the debugger:
 

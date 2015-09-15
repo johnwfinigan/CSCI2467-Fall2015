@@ -6,7 +6,7 @@ access to code I write in class, bugs and all.
 
 # Contents
 
-0. syllabus: syllabus groff source
-1. first-examples: examples from our intro lectures
+0. first-examples: examples from our intro lectures
+1. misc: miscellaneous files, generally of minor interest
 2. homeworks-labs: homework and lab materials
 3. copyfile-examples: example implementation of bare-bones cp clone, corresponts to Stevens chapter 3.

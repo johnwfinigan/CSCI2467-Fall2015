@@ -46,6 +46,13 @@ int main(int argc, char **argv)
 	    perror("read error");
 	    exit(3);
 	}
+	off_t currpos = lseek(sourcefile, 0, SEEK_CUR);
+	if (currpos == -1) {
+	    perror("lseek");
+	    exit(8);
+	}
+	printf("current position in source file during loop: %lld\n",
+	       (long long) currpos);
 
 	ssize_t wret = 0;
 	ssize_t wcount = 0;

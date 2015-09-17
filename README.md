@@ -18,8 +18,8 @@ access to code I write in class, bugs and all.
 
 *Chapters 1 and 2 (all, informational only)
 * Chapter 3
-** 3.1 through 3.8 (open, creat, close, lseek, read, write)
-** 3.11 (atomic operations)
+  * 3.1 through 3.8 (open, creat, close, lseek, read, write)
+  * 3.11 (atomic operations)
 
 
 

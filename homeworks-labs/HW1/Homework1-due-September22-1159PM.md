@@ -11,9 +11,9 @@ not return -1 or a partial read or write, but rather read or write the full
 amount requested. However, please see below: you must explain several scenarios 
 where this is not the case.
 
-Don't forget about "man 2 read" and "man 2 write".
+Don't forget about "man 2 read" and "man 2 write", and also the Stevens Ch. 3 sections on read and write.
 
-Example:
+# Example:
 
 Q - Assume sourcefile is 1024 bytes in size (Remember, assume defaults as above).
 

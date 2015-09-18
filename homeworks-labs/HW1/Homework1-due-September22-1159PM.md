@@ -11,7 +11,8 @@ not return -1 or a partial read or write, but rather read or write the full
 amount requested. However, please see below: you must explain several scenarios 
 where this is not the case.
 
-**Clarification: read() is always allowed to return 0 at end of file (EOF)**
+**Clarification: read() is always allowed to return 0 at end of file (EOF), or 
+less than the requested size if there is not enough data left in the file to fulfill a full sized request.**
 
 Don't forget about "man 2 read" and "man 2 write", and also the Stevens Ch. 3 sections on read and write.
 

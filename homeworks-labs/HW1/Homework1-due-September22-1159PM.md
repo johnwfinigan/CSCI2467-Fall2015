@@ -14,7 +14,9 @@ where this is not the case.
 **Clarification: read() is always allowed to return 0 at end of file (EOF), or 
 less than the requested size if there is not enough data left in the file to fulfill a full sized request.**
 
-Don't forget about "man 2 read" and "man 2 write", and also the Stevens Ch. 3 sections on read and write.
+Don't forget about "man 2 read" and "man 2 write", and also the Stevens Ch. 3 sections on read and write. Hint from man 2 read:
+
+"On success, the number of bytes read is returned (zero indicates end of file), and the file position is advanced by this number.  It is not an error  if  this number is smaller than the number of bytes requested [...]"
 
 # Example:
 
@@ -24,11 +26,11 @@ A - See the following:
 
 * First iteration:
   * Line 32: we ask to read 1024 bytes from sourcefile into buf.
-  * rret = 1024 - read returns full request successfully (default assumption).
+  * rcount = 1024 - read returns full request successfully (default assumption).
   * buf[0] through buf[1023] now contain valid file data.
-  * Line 33: rret != -1. If not taken.
+  * Line 33: rcount != -1. If not taken.
   * Line 41: wcount = 0, so we start writing from buf[0]
-  * rret = 1024, and wcount = 0, so we ask to write 1024 butes from address of buf[0]
+  * rcount = 1024, and wcount = 0, so we ask to write 1024 bytes from address of buf[0]
   * write succeeds in writing full amount (default assumption). wret becomes 1024. 
   * Line 42: wret != -1. If not taken.
   * Line 46: wcount == 1024 and rcount == 1024, so do-while terminates.

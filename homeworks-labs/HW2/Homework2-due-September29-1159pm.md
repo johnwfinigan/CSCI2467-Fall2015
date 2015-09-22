@@ -14,4 +14,9 @@ Write a program to verify this.
     man 2 lseek
     man 2 open
 
+#What to turn in
+
+Submit one .c source code file. Put your answers to the questions in a C comment
+block at the top of the file.
+
 # Please do not commit solutions to a public repo!

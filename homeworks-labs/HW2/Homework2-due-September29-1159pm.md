@@ -7,4 +7,11 @@ If you open a file for read-write with the append flag, can you still `read` fro
 in the file using `lseek`? Can you use `lseek` to replace existing data in the file?
 Write a program to verify this.
 
+#Hints
+
+    man 2 read
+    man 2 write
+    man 2 lseek
+    man 2 open
+
 # Please do not commit solutions to a public repo!

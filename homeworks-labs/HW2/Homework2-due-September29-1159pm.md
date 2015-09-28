@@ -9,6 +9,9 @@ Write a program to verify this.
 
 #Hints
 
+**Hint based on student question: All sentences in the question assume that the file is 
+opened with O_APPEND** 
+
     man 2 read
     man 2 write
     man 2 lseek

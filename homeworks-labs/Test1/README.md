@@ -9,6 +9,8 @@ Here's a non-exhausive list:
 * Stevens 3.1 through 3.8 (open, creat, close, lseek, read, write)
 * `printf()`, described in `man 3 printf` and Stevens section 5.11
 
+Manpages to read:
+
     man 2 open
     man 2 read
     man 2 write

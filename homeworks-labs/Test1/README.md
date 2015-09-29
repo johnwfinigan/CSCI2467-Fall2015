@@ -9,12 +9,12 @@ Here's a non-exhausive list:
 * Stevens 3.1 through 3.8 (open, creat, close, lseek, read, write)
 * `printf()`, described in `man 3 printf` and Stevens section 5.11
 
-     man 2 open
-     man 2 read
-     man 2 write
-     man 2 lseek
-     man 2 close
-     man 3 printf
+    man 2 open
+    man 2 read
+    man 2 write
+    man 2 lseek
+    man 2 close
+    man 3 printf
 
 **Do not** try to memorize manpages, since they will be provided to you on paper during the test.
 

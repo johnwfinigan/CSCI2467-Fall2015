@@ -4,11 +4,11 @@ Examples for CSCI 2467
 Assorted code from in-classroom hacking and homeworks. Intended to provide near real time
 access to code I write in class, bugs and all.
 
-**If you have a question about the class and it's not personal, please open an issue!**
+**If you have a question about the material, please open an issue!** 
 
 # News
 
-**Test 1 study guide under homeworks-labs**
+**Test 1 is on October 6th -- study guide under homeworks-labs**
 
 
 

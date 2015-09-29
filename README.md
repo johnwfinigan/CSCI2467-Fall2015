@@ -4,13 +4,9 @@ Examples for CSCI 2467
 Assorted code from in-classroom hacking and homeworks. Intended to provide near real time
 access to code I write in class, bugs and all.
 
-# Contents
+# News
 
-0. first-examples: examples from our intro lectures
-1. misc: miscellaneous files, generally of minor interest
-2. homeworks-labs: homework and lab materials
-3. copyfile-examples: example implementation of bare-bones cp clone, corresponts to Stevens chapter 3.
-
+**Test 1 study guide under homeworks-labs**
 
 
 
@@ -20,6 +16,7 @@ access to code I write in class, bugs and all.
 * Chapter 3
   * 3.1 through 3.8 (open, creat, close, lseek, read, write)
   * 3.11 (atomic operations)
-
+* Chapter 4
+  * 4.1 through 4.3 (stat and file types)
 
 

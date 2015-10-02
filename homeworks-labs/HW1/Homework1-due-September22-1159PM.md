@@ -1,7 +1,7 @@
 # Homework 1 - Due September 22 at 11:59 PM
 
 Your mission is to explain in detail the control flow of the loop at lines 
-32 through 48 of copyfile-final.c, which you can find at https://github.com/johnwfinigan/CSCI2467-Fall2015/blob/master/copyfile-examples/copyfile-final.c
+32 through 48 of copyfile-final.c, which you can find at https://github.com/johnwfinigan/CSCI2467-Fall2015/blob/master/homeworks-labs/HW1/copyfile-final.c
 
 Lines 32 through 48 correspond to the main while() loop containing read() and write().
 

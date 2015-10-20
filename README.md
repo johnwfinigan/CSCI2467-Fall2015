@@ -20,5 +20,7 @@ access to code I write in class, bugs and all.
   * 3.11 (atomic operations)
 * Chapter 4
   * 4.1 through 4.3 (stat and file types)
+  * 4.5 (file permissions)
+  * 4.22 (reading directories)
 
 

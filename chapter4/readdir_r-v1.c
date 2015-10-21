@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     struct dirent *result;
 
 
-    while (1) {
+    for(;;) { /* for(;;) is a common infinite loop idiom */
 
 	int ret = readdir_r(dstream, &d, &result);
         /* note that unlike readdir, readdir_r returns 0 for 

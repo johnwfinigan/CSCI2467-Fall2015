@@ -4,6 +4,7 @@
 #include <sys/types.h>
 #include <dirent.h>
 
+/* see chapter4/readdir_r-v1.c for extra comments */
 
 int main(int argc, char **argv)
 {
@@ -17,30 +18,19 @@ int main(int argc, char **argv)
 	exit(2);
     }
 
-    struct dirent d;   /* manpage states that readdir_r's entry
-                          buffer must be "caller-allocated". That's you!
-                          In other words, you have to declare an object
-                          that is big enough to hold a dirent struct's 
-                          worth of data. Just declaring the struct is
-                          an easy way to do it. */
+    struct dirent d;
     struct dirent *result;
 
 
-    for(;;) { /* for(;;) is a common infinite loop idiom */
+    for(;;) {
 
 	int ret = readdir_r(dstream, &d, &result);
-        /* note that unlike readdir, readdir_r returns 0 for 
-        *  success and non-zero for error. The error and end
-        *  of directory states do NOT have the same return value */
 
 	if (ret != 0) {
 	    perror("readdir_r error");
 	    exit(3);
 	}
-	if (!result) { /* readdir_r stores NULL in result upon end of 
-                        * directory. NULL is false, so !NULL is true.
-                        * Personally I prefer to write (result == NULL),
-                        * but this is common and it's up to you. */
+	if (!result) {
 	    break;
 	}
 

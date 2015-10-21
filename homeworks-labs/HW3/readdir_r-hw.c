@@ -8,17 +8,8 @@
 int main(int argc, char **argv)
 {
 
-    /* if argc < 2, no optional command line args: default to the current directory */
+    /* Always list the current directory */
     char *d_to_open = ".";
-
-    if (argc == 2) {
-	/* argv[1] has type char *, and so does d_to_open */
-	d_to_open = argv[1];
-    }
-    if (argc > 2) {
-	printf("please specify one directory name to open\n");
-	exit(1);
-    }
 
     DIR *dstream = opendir(d_to_open);
     if (dstream == NULL) {

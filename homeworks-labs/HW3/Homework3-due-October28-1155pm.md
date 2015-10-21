@@ -3,7 +3,7 @@
 Modify the code at [HW3/readdir_r-hw.c](https://github.com/johnwfinigan/CSCI2467-Fall2015/blob/master/homeworks-labs/HW3/readdir_r-hw.c) 
 to print out the name and mode of each file. The mode must be printed **in octal**.
 
-If the file is a directory, print the word "(Directory)" after the name.
+If the file is a directory, print the word (Directory) after the name.
 
 Submit one .c file on Moodle.
 

@@ -10,6 +10,9 @@ Submit one .c file on Moodle.
 # Hints
 
      man 2 stat
+     man 3 readdir
+
+Also be sure to read Stevens 4.22, "Reading Directories"
 
 # Sample output
 

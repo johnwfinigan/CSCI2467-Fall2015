@@ -1,4 +1,4 @@
-# Homework 3 - Due October 28 at 11:55 PM
+# Homework 4 - Due November 9 at 11:55 PM
 
 Modify the code at [HW4/HW4-Sample.c](https://github.com/johnwfinigan/CSCI2467-Fall2015/blob/master/homeworks-labs/HW4/HW4-Sample.c) 
 to print out the name and mode of each file, just as before. The mode must be printed **in octal**.
@@ -19,7 +19,6 @@ Submit one .c file on Moodle.
 
 **READ Stevens 6.1 through 6.5 to get background on getpwuid and getgrgid.**
 
-Also be sure to read Stevens 4.22, "Reading Directories"
 
 # Sample output
 
@@ -30,7 +29,7 @@ Your output does not have to be sorted in any particular order.
 
       user: myuser, group: mygroup, mode: 100664, name: HW4-Sample.c 
       user: myuser, group: mygroup, mode: 100775, name: a.out 
-      user: myuser, group: mygroup,  mode: 100664, name: Homework4-due-November-9-1155pm.md 
+      user: myuser, group: mygroup, mode: 100664, name: Homework4-due-November-9-1155pm.md 
       user: myuser, group: mygroup, mode: 40775, name: testdir (Directory)
 
 ##Extra credit (10 points)

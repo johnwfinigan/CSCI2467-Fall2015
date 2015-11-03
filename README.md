@@ -22,5 +22,7 @@ access to code I write in class, bugs and all.
   * 4.1 through 4.3 (stat and file types)
   * 4.5 (file permissions)
   * 4.22 (reading directories)
+  Chapter 6
+  * 6.1 through 6.5 (Password file, shadow passwords, group file, supplementary group IDs)
 
 

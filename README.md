@@ -26,3 +26,6 @@ access to code I write in class, bugs and all.
   * 6.1 through 6.5 (Password file, shadow passwords, group file, supplementary group IDs)
 
 
+[Essential C Guide](http://cslibrary.stanford.edu/101/)
+
+

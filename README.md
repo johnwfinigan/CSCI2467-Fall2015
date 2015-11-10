@@ -10,7 +10,7 @@ access to code I write in class, bugs and all.
 
 **Test 1 is on October 6th -- study guide under homeworks-labs**
 
-** Test 2 will be on November 17 **
+**Test 2 will be on November 17**
 
 
 

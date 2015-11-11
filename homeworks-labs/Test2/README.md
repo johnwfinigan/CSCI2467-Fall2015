@@ -22,12 +22,11 @@ Here's a non-exhausive list:
     * 6.1 through 6.5 (Password file, shadow passwords, group file, supplementary group IDs)
 
 Manpages to read:
-
-    man 2 stat
-x   man opendir
-    man 3 readdir
-    man 3 getpwuid
-    man 3 getgrgid
+   * man 2 stat
+   * man opendir
+   * man 3 readdir
+   * man 3 getpwuid
+   * man 3 getgrgid
 
 Be able to differentiate a:
    * File from a file name from an inode

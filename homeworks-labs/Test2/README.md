@@ -5,6 +5,7 @@ learned for Test 1. Test 1 material may only be present incidentally; I will not
 on Test 1 material.
 
 [HW3 Solution](https://github.com/johnwfinigan/CSCI2467-Fall2015/blob/master/homeworks-labs/HW4/HW4-Sample.c)
+
 [HW4 Solution](https://github.com/johnwfinigan/CSCI2467-Fall2015/blob/master/homeworks-labs/HW4/HW4-Solution.c)
 
 Here's a non-exhausive list:
@@ -21,11 +22,12 @@ Here's a non-exhausive list:
     * 6.1 through 6.5 (Password file, shadow passwords, group file, supplementary group IDs)
 
 Manpages to read:
-          man 2 stat
-          man opendir
-          man 3 readdir
-          man 3 getpwuid
-          man 3 getgrgid
+
+    man 2 stat
+x   man opendir
+    man 3 readdir
+    man 3 getpwuid
+    man 3 getgrgid
 
 Be able to differentiate a:
    * File from a file name from an inode

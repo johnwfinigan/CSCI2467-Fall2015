@@ -4,7 +4,9 @@ Due date: December 2, 7:00 pm (to be returned in class on the 3rd)
 
 May be turned in late with no penalty, as long as it's turned in prior to the final.
 
-Reproduced below in its entirety is the OpenBSD 5.8 String processing function strnlen(). Turn in one .c file containing this code and sufficient comments to explain every line in detail. In particular, you MUST explain all three clauses of the for loop in detail, and also explain the for loop's empty body.
+Reproduced below in its entirety is the OpenBSD 5.8 String processing function strnlen().
+
+Turn in one .c file to Moodle containing this code and sufficient comments to explain every line in detail. In particular, you MUST explain all three clauses of the for loop in detail, and also explain the for loop's empty body.
 
 ```
 /*  $OpenBSD: strnlen.c,v 1.5 2014/06/10 04:17:37 deraadt Exp $ */

@@ -8,6 +8,14 @@ Reproduced below in its entirety is the OpenBSD 5.8 String processing function s
 
 Turn in one .c file to Moodle containing this code and sufficient comments to explain every line in detail. In particular, you MUST explain all three clauses of the for loop in detail, and also explain the for loop's empty body.
 
+
+##HINT
+
+Section 4 in Essential C talks about functions (went over in class 11/25)
+
+Be sure to read the formal definition of the for loop in section 6.8.5.3 of the [C11 standard](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf) (page 151 as marked on bottom of PDF page)
+
+
 ```
 /*  $OpenBSD: strnlen.c,v 1.5 2014/06/10 04:17:37 deraadt Exp $ */
 

@@ -39,8 +39,7 @@ Be sure to read the formal definition of the for loop in section 6.8.5.3 of the 
 
 #include <string.h>
 
-size_t
-strnlen(const char *str, size_t maxlen)
+size_t strnlen(const char *str, size_t maxlen)
 {
     const char *cp;
 

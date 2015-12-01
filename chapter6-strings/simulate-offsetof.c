@@ -28,6 +28,9 @@ int main()
     diff = (void *)&s.st_size - (void *)&s.st_dev;
     printf("by another method, offset is %tu\n", diff);
 
+    //note: check out the nifty format code type modifiers
+    //for ptrdiff_t, use t, and for size_t, use z
+
     return 0;
 
 }

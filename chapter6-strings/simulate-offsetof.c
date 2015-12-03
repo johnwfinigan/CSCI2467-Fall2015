@@ -25,7 +25,12 @@ int main()
     //note: we need to know what member is first!
     //that is, which is at offset 0 in the struct
     //for stat, that is st_dev (see man 2 stat)
-    diff = (void *)&s.st_size - (void *)&s.st_dev;
+    //
+    //note 2: previously, I had cast both member pointers below
+    //to void *. Doing pointer arithmetic on void pointers
+    //is a gcc extension. Casting to char * is more standard-friendly.
+    //See: https://gcc.gnu.org/onlinedocs/gcc-4.8.0/gcc/Pointer-Arith.html
+    diff = (char *)&s.st_size - (char *)&s.st_dev;
     printf("by another method, offset is %tu\n", diff);
 
     //note: check out the nifty format code type modifiers
